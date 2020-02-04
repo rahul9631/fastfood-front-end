@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar .nav-item .nav-link{
+    font-weight: bold;
+    color: aliceblue;
+    font-size:20px; 
+    
+    
+  
+}
+ .order{
+    border: 1px solid white;
+    border-radius:20px;
+    padding: 5px;
+    margin-top: 5px;
+    width: 130px;
+    text-align: center;
+}
+.meal{
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    position: relative;
+}
+.meal::before{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #000000;
+    position: absolute;
+    left: 200px;
+    top: 50%;
+}
+.meal::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #000000;
+    position: absolute;
+    right: 200px;
+    top: 50%;
+      
+}
+.container .card:hover{
+    border:2px solid black;
+   
+    
+}
+.sweet{
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    position: relative;
+
+}
+.Payment{
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    position: relative;  
+}
+#footer .footer-top{
+    background-color:black;
+    color: aliceblue;
+
+}
+.social-links a{
+    margin-left: 5px;
+}
+.copyright{
+    text-align: center;
+    padding-top: 20px;
+    background-color:#232526;
+    
+   
+    
+}
+

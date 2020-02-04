@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!---------Bootstrap css---------------------------------->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <!--------------Bootstrap Js------------------------------->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--------------mystyle------------------------------------->
+    <link type="text/css" rel="stylesheet" href="css/mystyle.css">
+    <!-------------Google Font--------------------->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+     
+     <!------Font Awesome-------->
+     <script src="https://kit.fontawesome.com/cf00266bc2.js"></script>
+
+    <title>fastfood</title>
+    <style>
+  body{
+     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,100,0.5)), url(img/contact.jpg);
+     height: auto;
+     background-size: cover;
+     background-position: center;
+
+   }
+   .contact-form{
+    background: rgba(0, 0, 0, .6);
+    border-radius: 10px;
+   }
+   section{
+     margin-top: 10px;
+     margin-bottom: 10px;
+   }
+   .mapouter .gmap_canvas{
+     border: 5px solid black;
+   }
+    
+    </style>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" height="80" width="80" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                   
+                    <li class="nav-item">
+                            <a class="nav-link" href="lunch.html">Lunch</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link" href="breakfast.html">Breakfast</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="sweets.html">Sweets</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="fruits.html">Fruit</a>
+                                  </li>
+                                  <li class="nav-item">
+                                        <a class="nav-link" href="About.html">About</a>
+                                      </li>
+                                      <li class="nav-item active">
+                                            <a class="nav-link order sm-2" href="order.html">Order Now</a>
+                                          </li>
+                                     
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0 mr-auto">
+                    <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-info  my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                 
+                  <i class="fas fa-shopping-cart mr-auto text-white fa-2x total price"></i>
+                  <i class="fas fa-rupee-sign mr-auto text-white fa-2x selected item"></i>
+                </div> 
+              </nav>
+              <br><br><br><br>
+            
+<!-----start registration form-->
+<section>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-8">
+     
+  <br>
+        <h2 class="text-white">Location</h2>
+        <br>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=chakkarpur%20mg%20road&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.enable-javascript.net">enable-javascript.net</a></div><style>.mapouter{position:relative;text-align:right;height:400px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:500px;}</style></div>
+
+    </div>
+   
+    <div class="col-lg-4 col-md-4 contact-form">
+      <h2 class="text-white">Order Form</h2>
+      <form method="POST" action="#">
+          <div class="form-group">
+              <label class="text-white">Choose Category</label>
+            <select class="form-control"> 
+              <option>Lunch</option>
+              <option>Breakfast</option>
+              <option>Fruits</option>
+              <option>Sweets</option>
+              <option>Others</option>
+            </select>
+          </div>
+        <div class="form-group">
+        <input type="text" name="name" placeholder="Enter your name" class="form-control">
+      </div>
+      <div class="form-group">
+          <input type="email" name="email" placeholder="Enter your Email" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="number" name="number" placeholder="Enter your number" class="form-control">
+          </div>
+          <div class="form-group">
+              <label class="text-white">Choose Location</label>
+            <select class="form-control"> 
+              <option>Gurgaon</option>
+              <option>Delhi</option>
+              <option>Noida</option>
+            </select>
+          </div>
+          <div class="form-group">
+              <input type="number" name="number" placeholder="Enter Postal Code" class="form-control">
+            </div>
+            <div class="form-group">
+            <textarea class="form-control" placeholder="Enter your Full Address"></textarea>
+          </div>
+          <div class="form-group">
+           <button class="btn btn-primary btn-block">Send</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+<!-----------------Start footer menu---------------------------->
+<footer>
+<div id="footer">
+  <div class="footer-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 footer-info mt-5 ">
+        <h3>Fastfood</h3>
+        <p>Fastfood is a Meal booking Website where book a different types of meal ,Sweets & Fruits
+          book you meal at home delivery within 20 to 30 min.
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-6 footer-link mt-5">
+        <h3>Useful Links</h3>
+        <ul class="list-unstyled">
+          <li><a href="#">Breakfast</a></li>
+          <li><a href="#">Lunch</a></li>
+          <li><a href="#">Sweets</a></li>
+          <li><a href="#">Fruits</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 footer-contact mt-5">
+        <h3>Contact</h3>
+      <p>
+        fastfood<br>
+          Chakkarpur,
+          Mg Road <br>
+          Gurgaon 122002
+          <br>
+          <strong>Phone:</strong>+91 9631260044
+          <strong>Email:</strong>care@fastfood.com
+        </p>
+        <h5>Follow Us</h5>
+        <div class="social-links">
+          <a class="twitter" href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a class="twitter" href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a class="twitter" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a class="twitter" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+    
+        </div>
+        <hr>
+      </div>
+</div>
+  </div>
+  </div>
+<div class="container-fluid copyright">
+  <div class="row">
+    <div class="col-lg-6 col-md-6">
+      <p class="text-muted">
+          Copyright &copy;fastfood 2019 All right reserved.
+        </p>
+  </div>
+  <div class="col-lg-6 col-md-6">
+    <p class="text-muted">Design by <i class="fas fa-heart"></i> <a class="unstyled" href="#"> Rahulraj Nirala</a></p>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</footer>
+
+   <!------------JavaScript code---------------------->
+   <script type="text/javascript">
+    var prices = $(".prices").attr("data_value");
+    i=0;
+    function adcart (){
+      i++;
+      document.getElementById("price").innerHTML="Total Price" +i *
+       prices;
+    }
+    $("button").click(function(){
+        document.getElementById("select").innerHTML="Selected Items" +i;
+
+    });
+
+
+
+
+
+</script>
+
+
+  <!-------------Bootstrap CDN----------------->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!---------------Javascript-------------------------->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
